@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+label{
+
+    margin-right: 5px;
+}
+
+input{
+
+    margin-top: 20px;
+}
+
+button{
+
+    margin: 30px;
+    width: 100px;
+}
+
+.card{
+
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.novadiv{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paragrafo{
+
+    margin: 10px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listas.css">
+    <title>Manipulando Listas com JS</title>
+</head>
+<body>
+
+    <div class="container">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <br>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <br>
+
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone">
+        <br>
+
+        <button type="button" onclick="BotaoSalvar()">Salvar</button>
+        <button type="button" onclick="BotaoListar()">Listar</button>
+        <button type="reset"  onclick="BotaoLimpar()">Limpar</button>
+
+        <div class="novadiv" id="novadiv"></div>
+    </div>
+
+    
+    
+
+    <script src="listas.js"></script>
+</body>
+</html>

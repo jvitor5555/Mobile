@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio.css">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <p>Cadastro de Produtos</p>
+
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao" autocomplete="off" required>
+
+            <label for="quantidade">Quantidade</label>
+            <input type="text" id="quantidade" name="quantidade" autocomplete="off" required>
+
+            <label for="precounitario">Preço Unitário</label>
+            <input type="text" id="precounitario" name="precounitario" autocomplete="off" required>
+
+            <label for="precototal">Preço Total</label>
+            <input type="text" id="precototal" name="precototal" autocomplete="off" required>
+
+        </div>
+
+    </div>
+
+    <div class="botao">
+        <button type="button" onclick="BotaoCalcular()">Calcular</button>
+        <button type="button" onclick="BotaoSalvar()">Salvar</button>
+        <button type="button" onclick="BotaoLimpar()">Limpar</button>
+    </div>
+
+   <div class="informacoes">
+        <div>Nome Produto</div>
+        <div>Quantidade</div>
+        <div>Valor Unitário</div>
+        <div>Preço Total</div>
+   </div>
+
+    <div class="novadiv" id="novadiv"></div>
+
+    <script src="desafio.js"></script>
+</body>
+</html>
