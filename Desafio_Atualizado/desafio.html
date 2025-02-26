@@ -8,10 +8,25 @@
 </head>
 <body>
     <div class="container">
+
+        <div>
+
+            <button type="button" class="accordion" onclick="AbrirBotao()">
+            Filtrados
+            <span class="arrow">⬇</span>
+            </button>
+
+            <div class="panel" id="panel"></div>
+
+        </div>
+
         <div class="card">
             <p>Cadastro de Produtos</p>
 
-            <label for="descricao">Descrição</label>
+            <label for="filtrar">Filtrar (Nome Produto)</label>
+            <input type="text" id="filtrar" name="filtrar" autocomplete="off" required>
+
+            <label for="descricao">Nome do Produto</label>
             <input type="text" id="descricao" name="descricao" autocomplete="off" required>
 
             <label for="quantidade">Quantidade</label>
@@ -32,6 +47,9 @@
         <button type="button" onclick="BotaoSalvar()">Salvar</button>
         <button type="button" onclick="BotaoLimpar()">Limpar</button>
         <button type="button" onclick="RemoverProdutos()">Remover</button>
+        <button type="button" onclick="BotaoFiltrar()">Filtrar</button>
+        </a>
+
     </div>
 
    <div class="informacoes">
@@ -39,6 +57,7 @@
         <div>Quantidade</div>
         <div>Valor Unitário</div>
         <div>Preço Total</div>
+        
    </div>
 
     <div class="novadiv" id="novadiv"></div>
